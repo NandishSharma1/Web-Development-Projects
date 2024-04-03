@@ -1,0 +1,41 @@
+/* Universal selector denoted by (*) is used for select font of whole document text */
+
+*{
+    font-family: cursive;
+    
+}
+
+/* element selector is used  to target specific HTML elements. For example, if we want to change the color and size of all */
+
+body {
+    font-size: 15px;
+
+}
+/* psuedo selector is used for hover the cursosr and then we can change font size to like monospace */
+p:hover{
+    font-family: monospace;
+}
+
+
+
+/* nesting selector is used for select first article color then used nested selector */
+/* #first {} is id selector which is used for id selector */
+#first>p {
+    color: green;
+    background-color: ;
+}
+
+/* grouping selector is used for  selecting multiple elements with same class name. */
+
+#first, #second{
+    color: blue;
+}
+.purple {
+    color: purple;
+    font-family: monospace;
+}
+.highlight {
+    background-color: yellow;
+    font-weight: bolder;
+    font-style: italic;
+}

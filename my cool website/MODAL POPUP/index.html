@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Modal Popup</title>
+<style>
+    /* Style for the modal container */
+    .modal-container {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    }
+
+    /* Style for the modal content */
+    .modal-content {
+        background-color: #fefefe;
+        margin: 15% auto; /* 15% from the top and centered */
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%; /* Could be more or less, depending on screen size */
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+        animation-name: modalopen; /* Call the animation */
+        animation-duration: 0.5s;
+    }
+
+    /* Animation to make the modal appear */
+    @keyframes modalopen {
+        from {opacity: 0}
+        to {opacity: 1}
+    }
+</style>
+</head>
+<body>
+
+<!-- Button to trigger modal popup -->
+<button onclick="document.getElementById('myModal').style.display='block'">Open Modal</button>
+
+<!-- Modal container -->
+<div id="myModal" class="modal-container">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span onclick="document.getElementById('myModal').style.display='none'" style="float:right;cursor:pointer">&times;</span>
+    <p>This is a modal popup!</p>
+    <p>You can put any content here.</p>
+  </div>
+</div>
+
+</body>
+</html>

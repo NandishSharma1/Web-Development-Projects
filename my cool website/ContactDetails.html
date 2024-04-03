@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Details</title>
+</head>
+<body>
+    <h1>Enter your details here</h1>
+    <!-- inline vs block element we were using 
+    block element takes the whole width or block the whole horizontal line
+    inline elemnt doesnot block thw whole width line -->
+
+    <form action="">
+        
+        <input type="text" name="firstName" value="fir" id="firstName"><br><br>
+        <label for="">Last Name</label>
+        <input type="text" >
+        <br><br>
+        <label for="">Age</label>
+        <input type="Number">
+        <br><br>
+        <label for="">Date of Birth</label>
+        <input type="date">
+        <br><br>
+        <label for="email">Email</label>
+        <input id="email" type="email">
+        <br><br>
+        <label for="">Password</label>
+        <input type="password">
+        <br><br>
+        <!-- radio buttons are used when user have multiple options and they can select only one option at a time -->   
+       
+        <p>Enter your Gender</p>
+        
+        <input id="Male" name="Gender" type="radio" value="Male">
+        <label for="Male">Male</label><br>
+        
+        <input id="Female" name="Gender" type="radio" value="Female">
+        <label for="Female">Female</label><br>
+        
+        <input id="Other" name="Gender" type="radio" value="Other">
+        <label for="Other">Other</label>
+        <br><br>
+        <label for="Color">Your favourite Color</label>
+        <input id="color" type="color">
+        <br><br>
+        <input type="Reset">
+        <input type="submit">
+        <br><br>
+
+        <!-- Another attribute which is <Select> and <optiom]n></optiom> is used for drop down list -->
+
+        <label for="Cars">Cars</label>
+        <select name="Cars" id="Cars">
+        
+            <option value="Audi">Audi</option>
+            <option value="BMW">BMW</option>
+            <option value="Mercedez">Mercedez</option>
+            <option value="Wolkswagan">Wolkswagan</option>
+        </select>
+
+        </form>
+
+        <br><br>
+
+        <!--         -->
+
+        <label for="about yourself">Tell us about yourself</label>
+        <textarea name="about yourself" id="about yourself" cols="30" rows="20"></textarea>
+        
+
+
+    </form>
+    
+</body>
+</html>

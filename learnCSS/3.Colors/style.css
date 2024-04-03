@@ -1,0 +1,39 @@
+/* body {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center ;
+    color: #ef233c;
+    background-color: #a9def9;
+
+} */
+
+
+/* <---This main is Parent of section adn section is child of MAIN. also Body is parent of both section and main */
+/* em unit  is working according to relative to parent 
+rem is working relative to root which is HTML */
+/* main {
+border: 5px solid brown;
+    border-radius: 20px;
+    /* width: 50%; */
+    /* width: 100vw;
+    ;
+} */
+/* body {
+    font-size: 2em;
+
+}
+header {
+    font-size: 2em;
+}
+h1 {
+    font-size: 3rem ;
+} */ */
+/* section {
+    border: 5px dashed green;
+    width: 50vw;
+    height: 200vh;
+} */
+
+.box {
+    border: 20px solid red;
+}
